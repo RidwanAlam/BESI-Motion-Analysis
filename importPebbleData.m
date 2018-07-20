@@ -8,13 +8,11 @@ function pebbledata = importPebbleData(filename, startRow, endRow)
     end
 
     %% Format string for each line of text:
-    %   column1: double (%f)
-    %	column2: double (%f)
-    %   column3: double (%f)
-    %	column4: double (%f)
+    %   column1: double (%f);   column2: double (%f)
+    %   column3: double (%f);	column4: double (%f)
     %   column5: double (%f)
     formatSpec = '%f%f%f%f%f%[^\n\r]';
-
+    % variables: z, y, x, offset, timestamp
     %% Open the text file.
     fileID = fopen(filename,'r');
 
