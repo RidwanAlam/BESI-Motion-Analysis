@@ -35,7 +35,7 @@ enddayindex = floor(datenum(endDate))-startDateNum;
 %nindx_length = 0;
 %indx_length = 0;
 
-for r = 1:2
+for r = 1:2 % for each Pebble
     pebbleID = r-1;
     pebbleName = ['Pebble ' num2str(pebbleID,'%1d')];
     
